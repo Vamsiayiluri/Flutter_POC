@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+import 'pages/HomeScreen.dart';
+import 'pages/SecondScreen.dart';
+import 'pages/ThirdScreen.dart';
+import 'pages/FinalScreen.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: ExpandedWidget(),
+    initialRoute: '/',
+    routes: {
+      '/': (context) => HomeScreen(),
+      '/second': (context) => SecondScreen(),
+      '/third': (context) => ThirdScreen(),
+      '/final': (context) => FinalScreen(),
+    },
   ));
 }
 class ColumnClass extends StatelessWidget{
